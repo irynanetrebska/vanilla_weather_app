@@ -6,6 +6,60 @@
   border-radius: 7px;
 }
 
+h1 {
+  color: #4e515a;
+  display: inline;
+  font-family: "Google Sans", arial, sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.tempr {
+  position: relative;
+  left: -25px;
+  top: -13px;
+  color: #4e515a;
+  display: inline;
+  font-family: "Google Sans", arial, sans-serif;
+}
+
+.temp-number {
+  font-size: 60px;
+  width: auto;
+  font-family: "Google Sans", arial, sans-serif;
+}
+
+.precip {
+  list-style-type: none;
+  color: #70757a;
+  font-size: "Google Sans Text", arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  left: -70px;
+  width: auto;
+}
+
+.weather-date {
+  text-align: right;
+  list-style-type: none;
+  font-size: "Google Sans Text", arial, sans-serif;
+}
+
+.weather {
+  font-weight: 400;
+  font-size: 22px;
+  color: #202124;
+  line-height: 26px;
+}
+
+.date,
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #70757a;
+  line-height: 20px;
+}
+
 a:link {
   text-decoration: none;
 }
