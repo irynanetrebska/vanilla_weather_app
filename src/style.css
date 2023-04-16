@@ -2,6 +2,14 @@ h1 {
   margin-bottom: 20px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a {
+  color: #202124;
+}
+
 .weather-app-wrapper {
   line-height: 1;
 }
@@ -25,14 +33,6 @@ h1 {
   color: #202124;
 }
 
-.precip-humid-wind {
-  line-height: 12px;
-  font-size: 10px;
-  color: #70757a;
-  width: 150px;
-  height: 50px;
-}
-
 #icon {
   width: 60px;
   height: 60px;
@@ -49,6 +49,14 @@ h1 {
 .units {
   vertical-align: top;
   font-size: 10px;
+}
+
+.precip-humid-wind {
+  line-height: 12px;
+  font-size: 10px;
+  color: #70757a;
+  width: 150px;
+  height: 50px;
 }
 
 .weather-day-descrip {
@@ -71,18 +79,10 @@ h1 {
   color: #70757a;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-a {
-  color: #202124;
+.coded-by {
+  font-size: 10px;
 }
 
 .coded-by-link {
   color: rgb(89, 26, 224);
-}
-
-.coded-by {
-  font-size: 10px;
 }
