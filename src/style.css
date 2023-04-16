@@ -8,7 +8,7 @@ h1 {
 
 .weather-app {
   margin-top: 30px;
-  max-width: 500px;
+  max-width: 450px;
   font-family: "Google Sans Text", arial, sans-serif;
   border: 1px solid #d0d6dc;
   border-radius: 7px;
@@ -20,7 +20,7 @@ h1 {
 }
 
 .temperature {
-  width: 90px;
+  width: 150px;
   height: 50px;
   color: #202124;
 }
@@ -29,7 +29,7 @@ h1 {
   line-height: 12px;
   font-size: 10px;
   color: #70757a;
-  width: 90px;
+  width: 150px;
   height: 50px;
 }
 
@@ -53,21 +53,21 @@ h1 {
 
 .weather-day-descrip {
   text-align: right;
-  margin-left: 120px;
+  margin-left: 90px;
   position: relative;
-  top: -30px;
+  top: -40px;
 }
 
 .weather {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   color: #202124;
 }
 
 .day,
 .description {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 12px;
   color: #70757a;
 }
 
