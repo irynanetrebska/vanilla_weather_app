@@ -31,7 +31,7 @@ function displayTemperature(response) {
   let humidityValue = document.querySelector(".hum-value");
   humidityValue.innerHTML = response.data.temperature.humidity;
   let windValue = document.querySelector(".wind-value");
-  windValue.innerHTML = Math.round(response.data.wind.speed);
+  windValue.innerHTML = Math.round(response.data.wind.speed * 3.6);
   let dayTimeElement = document.querySelector(".day");
   dayTimeElement.innerHTML = formatDate(response.data.time * 1000);
 }
