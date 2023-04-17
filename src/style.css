@@ -40,7 +40,7 @@ a {
   top: -10px;
 }
 
-.temp-value {
+#temp-value {
   display: inline;
   font-size: 45px;
   line-height: 1;
@@ -68,15 +68,16 @@ a {
 
 .weather {
   font-size: 20px;
-  line-height: 26px;
+  line-height: 24px;
   color: #202124;
 }
 
 .day,
 .description {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 15px;
   color: #70757a;
+  text-transform: capitalize;
 }
 
 .coded-by {

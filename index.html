@@ -11,13 +11,14 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>Talence</h1>
+          <h1 id="city"></h1>
           <div class="d-flex img-temp-units-precip">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
@@ -25,26 +26,21 @@
               id="icon"
             />
             <div class="temperature">
-              <span class="temp-value">20</span>
+              <span id="temp-value"></span>
               <span class="units"
                 >°C | <a href="#" class="Fahrenheit">°F</a>
               </span>
             </div>
             <div class="precip-humid-wind">
-              <div class="precipitation">
-                Precipitation: <span class="prec-value">0%</span>
-              </div>
               <div class="humidity">
-                Humidity: <span class="hum-value">38%</span>
+                Humidity: <span class="hum-value"></span>%
               </div>
-              <div class="wind">
-                Wind: <span class="wind-value">16 km/h</span>
-              </div>
+              <div class="wind">Wind: <span class="wind-value"></span> m/s</div>
             </div>
             <div class="weather-day-descrip">
               <div class="weather">Weather</div>
               <div class="day">Sunday 18:00</div>
-              <div class="description">Sunny</div>
+              <div class="description"></div>
             </div>
           </div>
         </div>
