@@ -23,19 +23,20 @@ function formatDate(timestamp) {
 
 function displayTemperature(response) {
   let temperature = document.querySelector("#temp-value");
-  temperature.innerHTML = Math.round(response.data.temperature.current);
   let h1 = document.querySelector("#city");
-  h1.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".description");
-  descriptionElement.innerHTML = response.data.condition.description;
   let humidityValue = document.querySelector(".hum-value");
-  humidityValue.innerHTML = response.data.temperature.humidity;
   let windValue = document.querySelector(".wind-value");
-  windValue.innerHTML = Math.round(response.data.wind.speed * 3.6);
   let dayTimeElement = document.querySelector(".day");
-  dayTimeElement.innerHTML = formatDate(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
   let iconCode = response.data.condition.icon;
+
+  temperature.innerHTML = Math.round(response.data.temperature.current);
+  h1.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityValue.innerHTML = response.data.temperature.humidity;
+  windValue.innerHTML = Math.round(response.data.wind.speed * 3.6);
+  dayTimeElement.innerHTML = formatDate(response.data.time * 1000);
   iconElement.setAttribute(
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${iconCode}.png`
