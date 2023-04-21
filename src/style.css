@@ -6,10 +6,6 @@ a:link {
   text-decoration: none;
 }
 
-a {
-  color: #202124;
-}
-
 .weather-app-wrapper {
   line-height: 1;
 }
@@ -30,7 +26,6 @@ a {
 .temperature {
   width: 150px;
   height: 50px;
-  color: #202124;
 }
 
 #icon {
@@ -90,4 +85,14 @@ a {
 
 .coded-by-link {
   color: rgb(89, 26, 224);
+}
+
+.temperature .active {
+  color: rgb(19, 19, 39);
+  cursor: auto;
+}
+
+.coded-by-link:hover {
+  color: rgb(39, 39, 167);
+  text-decoration: underline;
 }
