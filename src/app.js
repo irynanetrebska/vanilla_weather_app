@@ -58,11 +58,8 @@ function handleSubmit(event) {
   celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
   let cityInputElement = document.querySelector("#city-input");
-  let searchedCity = cityInputElement.value.trim();
-  search(searchedCity);
+  search(cityInputElement.value);
 }
-
-search("Talence");
 
 function convertToFahrehheit(event) {
   event.preventDefault();
@@ -96,3 +93,5 @@ fahrenheitLink.addEventListener("click", convertToFahrehheit);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToCelcius);
+
+search("Talence");
