@@ -21,7 +21,8 @@ function formatDate(timestamp) {
   return `${days[day]} ${hours}:${minutes}`;
 }
 
-function displayForcast() {
+function displayForcast(response) {
+  console.log(response.data.daily);
   let forcastDisplay = document.querySelector("#forcast");
   let forcastHTML = `<div class="row">`;
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
@@ -44,6 +45,13 @@ function displayForcast() {
 
   forcastHTML = forcastHTML + `</div>`;
   forcastDisplay.innerHTML = forcastHTML;
+}
+
+function getForcast(city) {
+  let apiKey = "a339ota3fb01500d5581a0bb40c20254";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+
+  axios.get(apiUrl).then(displayForcast);
 }
 
 function displayTemperature(response) {
@@ -69,6 +77,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${iconCode}.png`
   );
   iconElement.setAttribute("alt", `${response.data.condition.icon}`);
+
+  getForcast(response.data.city);
 }
 
 function search(cityDisplay) {
@@ -119,5 +129,4 @@ fahrenheitLink.addEventListener("click", convertToFahrehheit);
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToCelcius);
 
-search("Talence");
-displayForcast();
+search("Bordeaux");
