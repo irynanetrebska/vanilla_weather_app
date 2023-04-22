@@ -109,17 +109,17 @@ a:link {
   text-decoration: underline;
 }
 
-.weather-forcast {
+.weather-forecast {
   margin-top: 20px;
   text-align: center;
   font-size: 10px;
   color: #202124;
 }
 
-.weather-forcast-day {
+.weather-forecast-day {
   font-size: 13px;
 }
 
-.forcast-temp-hight {
+.forecast-temp-hight {
   color: #70757a;
 }
