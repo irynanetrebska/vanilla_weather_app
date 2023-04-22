@@ -21,6 +21,31 @@ function formatDate(timestamp) {
   return `${days[day]} ${hours}:${minutes}`;
 }
 
+function displayForcast() {
+  let forcastDisplay = document.querySelector("#forcast");
+  let forcastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forcastHTML =
+      forcastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forcast-day">${day}</div>
+      <img
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+        alt="light rain"
+        width="36"
+      />
+      <span class="forcast-temp-day">18°</span>
+      <span class="forcast-temp-hight">10°</span>
+    </div>
+  `;
+  });
+
+  forcastHTML = forcastHTML + `</div>`;
+  forcastDisplay.innerHTML = forcastHTML;
+}
+
 function displayTemperature(response) {
   let temperature = document.querySelector("#temp-value");
   let h1 = document.querySelector("#city");
@@ -95,3 +120,4 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", convertToCelcius);
 
 search("Talence");
+displayForcast();
