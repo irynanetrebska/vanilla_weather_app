@@ -19,6 +19,7 @@ a:link {
   border-radius: 7px;
   padding: 15px;
   background: linear-gradient(#66d4f0, #bbf3f7, #d1f5f5);
+  box-shadow: 5px 5px 10px #585555;
 }
 
 .img-temp-units-precip {
