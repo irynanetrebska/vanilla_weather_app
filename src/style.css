@@ -25,6 +25,16 @@ a:link {
 #city-input,
 #button {
   box-shadow: 3px 3px 7px #585555;
+  opacity: 0.8;
+}
+
+#city-input::placeholder {
+  opacity: 0.5;
+}
+
+#button:hover {
+  background-color: #66d4f0;
+  color: rgb(88, 88, 240);
 }
 
 .img-temp-units-precip {
