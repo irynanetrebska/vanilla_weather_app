@@ -22,6 +22,11 @@ a:link {
   box-shadow: 5px 5px 10px #585555;
 }
 
+#city-input,
+#button {
+  box-shadow: 3px 3px 7px #585555;
+}
+
 .img-temp-units-precip {
   height: 50px;
   margin-top: 20px;
