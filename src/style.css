@@ -1,5 +1,6 @@
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  font-weight: 600;
 }
 
 a:link {
@@ -22,6 +23,7 @@ a:link {
 
 .img-temp-units-precip {
   height: 50px;
+  margin-top: 20px;
 }
 
 .temperature {
@@ -45,6 +47,8 @@ a:link {
 .units {
   vertical-align: top;
   font-size: 10px;
+  position: relative;
+  top: 3px;
 }
 
 .precip-humid-wind {
@@ -69,11 +73,18 @@ a:link {
   color: #202124;
 }
 
+.last-updated,
 .day,
 .description {
   font-size: 12px;
   line-height: 13px;
   color: #70757a;
+}
+
+.description {
+  position: relative;
+  left: 2px;
+  line-height: 1;
 }
 
 .description:first-letter {
@@ -96,4 +107,19 @@ a:link {
 .coded-by-link:hover {
   color: rgb(39, 39, 167);
   text-decoration: underline;
+}
+
+.weather-forcast {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 10px;
+  color: #202124;
+}
+
+.weather-forcast-day {
+  font-size: 13px;
+}
+
+.forcast-temp-hight {
+  color: #70757a;
 }
